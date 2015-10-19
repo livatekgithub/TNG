@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Tests" verbose="1" parallel="tests" thread-count="2">
+
+
+    <!--<test name="Test in ChromeHub">-->
+        <!--<parameter name="browser" value="chromehub"/>-->
+        <!--<classes>-->
+            <!--<class name="testcases.SignInTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Test in ChromeHub2">-->
+        <!--<parameter name="browser" value="chromehub"/>-->
+        <!--<classes>-->
+            <!--<class name="testcases.SignInTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Test in ChromeHub3">-->
+        <!--<parameter name="browser" value="chromehub"/>-->
+        <!--<classes>-->
+            <!--<class name="testcases.SignInTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Test in FirefoxHub">-->
+        <!--<parameter name="browser" value="firefoxhub"/>-->
+        <!--<classes>-->
+            <!--<class name="testcases.SignInTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Test in FirefoxHub2">-->
+        <!--<parameter name="browser" value="firefoxhub"/>-->
+        <!--<classes>-->
+            <!--<class name="testcases.SignInTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Test in FirefoxHub3">-->
+        <!--<parameter name="browser" value="firefoxhub"/>-->
+        <!--<classes>-->
+            <!--<class name="testcases.SignInTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="Test in Chrome" >
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testcases.SignInTest" />
+        </classes>
+    </test>
+
+    <test name="Test in Firefox" parallel="classes" thread-count="2">
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+            <class name="testcases.SignInTest" />
+        </classes>
+    </test>
+
+</suite>
